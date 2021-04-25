@@ -15,7 +15,7 @@
 5. Line 12 causes an error because `i` is only defined in the for loop, since it has block scope.
 6. Line 13 causes an error since `discountedPrice` is only defined in the for loop, because it is declared with `let` so it has block scope.
 7. Line 14 prints `150` because `finalPrice` is declared at the beginning of the function.
-8. The function will also return `discounted = [50, 100, 150]`, because even though `discounted` has block scope, it is defined in the outer-most block in the function, so it can be used everywhere inside it.
+8. The function will return `discounted = [50, 100, 150]`, because even though `discounted` has block scope, it is defined in the outer-most block in the function, so it can be used everywhere inside it.
 9. Line 11 causes the same error as in question 5. `i` is not defined outside of the for loop because it was declared with `let`.
 10. Line 12 will print `3` to the console, because `length` was declared at the start of the function even though it has block scope.
    - `discounted.push(discountedPrice)` doesn't cause an error because `const` only prevents the variable `discounted` from being reassigned. `const` does not prevent the array itself from being modified.
@@ -25,7 +25,7 @@
       2. `student['Grad Year']`
       3. `student.greeting()`
       4. `student['Favorite Teacher'].name`
-      5. `student.courseLoad[0]`, depends what the question means by 'first index'.
+      5. `student.courseLoad[0]`, depends what the question means by 'first index', I'm assuming the first element in the array.
 13. 
       1. `'32'`
       2.  `1`
@@ -44,7 +44,7 @@
       6.  `true`
 15. `===` is the strict equality operator, which means it only evaluates to true if the two operands are equal and are the same type. `==` on the other hand will attempt to convert the operands to the same type before checking their equality.
 16. [part1b-question16.js](part1b-question16.js)
-17. The function call will return `[2, 4, 6]`.
+17. The function call will return `[2, 4, 6]`. `modifyArray` returns a new array with `callback` applied to each of the elements of the array that was passed in.  The array we passed in was `[1, 2, 3]`, and the callback is `doSomething` which returns its argument multiplied by 2.
 18. [part1b-question18.js](part1b-question18.js)
 19. 
 ```js
